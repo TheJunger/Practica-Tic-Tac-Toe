@@ -88,8 +88,9 @@ const leerVictorias = () =>{
           console.log(cursorPlayer.result.key);
           if (cursorPlayer.result.key == 1){
               let vicPlayer = document.querySelector(".vplayer")
-              vicPlayer.textContent = cursorPlayer.result.value.player;
-              console.log(cursorPlayer.result.value.player)
+              let playerWins = parseInt(cursorPlayer.result.value.player);
+              vicPlayer.textContent = playerWins;
+              console.log(playerWins)
               console.log("texto title leido")
           }
           cursorPlayer.result.continue();
@@ -103,8 +104,9 @@ const leerVictorias = () =>{
       console.log(cursorCpu.result.key);
       if (cursorCpu.result.key == 1){
           let vicCpu = document.querySelector(".vcpu")
-          vicCpu.textContent = cursorCpu.result.value.cpu;
-          console.log(cursorCpu.result.value.cpu)
+          let cpuWins = parseInt(cursorCpu.result.value.cpu);
+          vicCpu.textContent = cpuWins;
+          console.log(cpuWins)
           console.log("texto title leido")
       }
       cursorCpu.result.continue();
